@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1-SKILLTEST</title>
+    <style>
+
+    h1 {
+        text-align: center; 
+        color: #26596b; 
+        border: 1px; 
+        border-radius: 8px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    body {
+        background-image: url(https://images.stockcake.com/public/f/f/e/ffeb7ba4-bf33-472f-b247-e7673f3b4ce5/futuristic-robot-portrait-stockcake.jpg);
+        color: #28596d;
+        margin: 0;
+        padding: 20px 0;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.5;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    .outer-box {
+    width: 650px;
+    min-width: 650px;
+    margin: 20px;
+    border: 2px solid #2e636a;
+    padding: 10px;
+    border-radius: 15px;
+    outline: 2px solid #3b988e;
+    outline-offset: 2px;
+    background-color: #fffEE2;
+    box-sizing: border-box;
+    }
+
+    .inner-box {
+        width: 580px;
+        min-width: 580px;
+        margin: 20px auto;
+        border: 2px solid #cb792c; 
+        padding: 20px; 
+        border-radius: 15px; 
+        outline: 2px solid #2a6f84; 
+        outline-offset: 2px;
+        background-color: #ebb54230;
+        box-sizing: border-box;
+    }
+
+    
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 18px;
+    }
+
+    .form-group input[type="text"],
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #28596d;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .form-group-row {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Image img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: right center: 90% 50%;
+    }
+ 
+    .Image {
+        text-align: center;
+    }
+    
+    footer {
+        text-align: center; 
+        color:#fffEE2
+    }
+        
+    .review {
+        width: 100%;
+        box-sizing: border-box;
+    }  
+
+    .submit {
+        background-color: rgb(36, 78, 98);
+        color: #fff6f1;
+        align-items: center;
+        display: block;
+        margin: 20px auto 0 auto;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    </style>
+</head>
+<body>
+
+<div class="outer-box">
+    <div class="Image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzSzEic48whR35tFVX9nfqL34JcqzW2_OXEv-AiZ4ilnviZdhUsWISGc&s=10">
+
+        <h1><u>✦ OBMC Robotics Club Application Form ✦</u></h1>
+
+        <p style="text-align: center;">
+            Welcome! Please fill out this form to apply for our school's Robotics Club.
+        </p>
+    </div>
+
+    <div class="inner-box">
+        <form>
+            <div class="form-group">
+                <label for="fullname"><strong>Name:</strong></label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter full name here">
+            </div>
+
+            <div class="form-group">
+                <label for="Email"><strong>Email:</strong></label>
+                <input type="text" id="email" name="" placeholder="Enter email here">
+            </div>
+
+            <div class="form-group">
+                <label for="grade"><strong>Grade Level:</strong></label>
+                <select id="grade" name="grade">
+                    <option value="1">Grade 7</option>
+                    <option value="2">Grade 8</option>
+                    <option value="3">Grade 9</option>
+                    <option value="4">Grade 10</option>
+                </select>
+            </div>
+                  
+            <div class="form-group">
+                <fieldset>
+                    <legend><strong>Gender:</strong></legend> 
+                    <div class="form-group-row" style="margin-top: 6px;">
+                        <div>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            
+            <div class="form-group">
+                <fieldset>
+                    <legend><strong>What are your skills?</strong></legend>
+                    <div class="form-group-row" style="margin-top: 6px;">
+                        <div>
+                            <input type="checkbox" id="coding"><label for="coding"> Coding</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="design"><label for="design"> Design</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="electronics"><label for="electronics"> Electronics</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label for="review"><strong>Tell us why you want to join:</strong></label>
+                <textarea class="review" id="review" name="review; "rows="8"></textarea>
+            </div>
+
+            <h2>Top Robotics Activities We Offer:</h2>
+            <ul>
+                <li>Line following Robots</li>
+                <li>Obstacles Avoidance Programming</li>
+                <li>Light Following Robots</li>
+            </ul>
+           
+            <h2>Helpful Links:</h2>
+            <ol>
+                <li><a href="https://www.sciencebuddies.org/blog/robotics-lessons" target="_blank">Robotics Lessons</a></li>
+                <li><a href="https://www.trossenrobotics.com/post/robot-guide-modern" target="_blank">Robotics Guide</a></li>
+            </ol>
+          
+            <input type="submit" class="submit" value="Submit Application">
+        </form>
+    </div>
+</div>
+
+<hr>
+<footer>
+    <p>© 2026 Robotics Club Application ┃ Created by Olivia Lopez</p>
+</footer>
+
+</body>
+</html>
